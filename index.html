@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Registration</h1>
+        <p>Please fill in your details below.</p>
+    </header>
+
+    <main>
+        <form action="" method="post">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <p>
+                    <label for="studentName">Student Name:</label><br>
+                    <input type="text"  name="studentName" required>
+                </p>
+
+                <p>
+                    <label for="matricNo">Matric No:</label><br>
+                    <input type="text"  name="matricNo" required>
+                </p>
+
+                <p>
+                    <label for="department">Department:</label><br>
+                    <select  name="department" required>
+                        <option value=""> Select Department </option>
+                        <option value="information-technology">Information Technology</option>
+                        <option value="information-communication-technology">Information Communication Technology</option>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                        <option value="software-engineering">Software Engineering</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone No:</label><br>
+                    <input type="tel" id="phone" name="phone" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio"  name="gender" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio"  name="gender" value="female">
+                <label for="female">Female</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Program</legend>
+                <input type="radio" id="fullTime" name="program" value="full-time" required>
+                <label for="fullTime">Full Time</label>
+
+                <input type="radio" id="weekday" name="program" value="weekday">
+                <label for="weekday">Weekday</label>
+
+                <input type="radio" id="weekend" name="program" value="weekend">
+                <label for="weekend">Weekend</label>
+            </fieldset>
+
+            <button >Submit</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p> 2026 Student Registration</p>
+    </footer>
+
+</body>
+</html>
